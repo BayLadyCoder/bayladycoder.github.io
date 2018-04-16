@@ -1,0 +1,616 @@
+* {
+	font-size: 17px;
+
+}
+ body {
+ 	margin: 0;
+ 	color: #595958;
+ 	width: 100vw;
+ 	height: 100vh;
+ }
+
+
+/* -------------------- NAVIGATION SECTION -------------------- */
+.navigation {
+	background-color: #4283f4;
+	height: 67px;
+	color: #f4cc46;
+	width: 100%;
+	margin: 0;
+}
+
+.logo {
+	letter-spacing: 2px;
+	
+}
+
+.logo, .menu {
+	display: inline-block;
+	margin: 20px;
+	font-family: 'Gugi', cursive;
+	max-height: 100%;
+}
+
+.menu ul{
+	list-style: none;
+	padding-left: 0; 
+	margin: 0;
+	
+}
+
+.menu ul li {
+	display: inline-block;
+	margin-right: 15px;
+
+}
+
+.menu {
+	float: right;
+	max-height: 100%;
+}
+
+.menu ul li a {
+	text-decoration: none;
+	padding: 20px 10px 20px 10px;
+	color: #f4cc46;
+
+}
+
+.menu ul li a:hover {
+	background-color: #f7cb51;
+	 color: #595958;
+	-webkit-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+
+}
+
+
+
+/* ------------------- HEADER SECTION -------------------- */
+header {
+	width: 100%;
+	padding: 200px 30px 250px 30px;
+	background-color:#383737;
+	color: white;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	margin: 0;
+}
+
+.introduction__text {
+	padding: 0px 20px;
+	border-radius: 20px;
+	
+	font-family: 'Jura', sans-serif;
+	color: white;
+	display: inline-block;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+
+		position: relative;
+	-webkit-animation-name: photoAppear;
+	        animation-name: photoAppear;
+    -webkit-animation-duration: 7s;
+            animation-duration: 7s;
+}
+
+.introduction__text p {
+	margin: 20px;
+
+}
+
+.introduction__text p, .introduction__text h1, .introduction__text strong {
+	font-size: 35px;
+}
+
+.introduction__text h1 {
+	margin: 20px;
+	padding-bottom: 40px;
+	text-shadow: 1px 1px 2px black, 0 0 25px #4587f9, 0 0 5px darkblue;
+}
+
+.introduction__text strong {
+	color: #f4cc46;
+}
+
+.introduction__text-buttons a {
+	text-decoration: none;
+	border: dashed 2px #f7cb51;
+	border-radius: 15px;
+	margin: 20px;
+	padding: 15px;
+	color: white;
+	font-size: 25px;
+	-webkit-box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.3);
+	        box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.3);
+}
+
+.introduction__text-buttons i {
+	font-size: 25px;
+	
+	
+}
+
+.introduction__text-buttons a:hover {
+	color: #f4cc46;
+	border: solid 3px #f7cb51;
+	-webkit-box-shadow: 5px 5px 8px rgba(247, 239, 212, 0.3);
+	        box-shadow: 5px 5px 8px rgba(247, 239, 212, 0.3);
+	text-shadow: 1px 1px 2px black, 0 0 25px #f7efd4, 0 0 5px black;
+}	
+
+
+.introduction__text-social {
+	margin-top: 20px;
+	padding-top: 20px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+
+.introduction__text-social i {
+	
+	padding: 15px 20px;
+	color: white;
+	font-size: 35px;
+}
+
+
+.introduction__text-social i:hover {
+	color: #4283f4;
+	font-size: 40px;
+}
+
+
+.introduction__photo {
+	display: inline-block;
+	padding-left: 80px;
+	padding-top: 10px;
+}
+
+.introduction__photo img {
+	width: 250px;
+	border-radius: 45%;
+	border: solid black 2px;
+	-webkit-box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+	        box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+
+  	position: relative;
+	-webkit-animation-name: photoAppear;
+	        animation-name: photoAppear;
+    -webkit-animation-duration: 7s;
+            animation-duration: 7s;
+}
+
+
+/* ------------------- ABOUT ME SECTION -------------------- */
+
+main {
+	font-family: 'Roboto', sans-serif;
+	font-family: 'Jura', sans-serif;
+	font-family: 'Gaegu', cursive;
+}
+
+.aboutMe {
+	padding: 120px 0px 140px 0px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #383737;
+}
+
+.aboutMe__content {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding: 20px 0px;
+	
+}
+
+.aboutMe h2 {
+	text-align: center;
+	font-size: 25px;
+	margin: 0;
+	border: dashed 5px #f4cc46;
+	padding: 0px 20px;
+	max-width: 20%;
+}
+
+
+.aboutMe__content-photo {
+	max-width: 30%;
+	display: flex;
+	justify-content: center;
+}
+.aboutMe__content-text {
+	max-width: 40%;
+	padding: 0px 50px
+} 
+
+.aboutMe__content-photo img {
+	max-width: 100%;
+	max-height: 350px;
+	border-radius: 20%;
+	box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+.aboutMe__content-text p {
+	font-size: 19px;
+	
+	hyphens: auto;
+	text-indent: 20px;
+	line-height: 1.7;
+}
+
+/* ------------------- SKILLS SECTION -------------------- */
+
+.skills {
+	padding: 120px 10px 100px 10px;
+	background-color: #383737;
+	color: #d6d9db;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 25px;
+}
+
+.skills h2 {
+	border: dashed 5px #4283f4;
+	color: #f4cc46;
+	font-size: 25px;
+	padding: 0px 20px;
+	max-width: 20%;
+	margin: 0 0 30px 0;
+	animation-name: fontColorChanging;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    color: yellow;
+
+}
+
+.skills i {
+	font-size: 25px;
+	animation-name: fontColorChanging;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    color: yellow;
+}
+
+.skills__content {
+	width: 65%;
+	max-width: 1000px;
+	height: 400px;
+	padding: 40px 80px 20px 80px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.skills__content-eachSkill i {
+	font-size: 45px;
+
+	margin-bottom: 20px;
+
+    color: yellow;
+	text-shadow: 1px 1px 1px black, 0 0 7px white, 0 0 5px darkblue;
+	
+}
+
+.skills__content-eachSkill {
+	display: flex;
+	justify-content: flex-start;
+	width: 100%;
+}
+
+.skills__content-eachSkill p {
+	font-weight: 700;
+	font-size: 22px;
+	margin: 0;
+	text-transform: uppercase;
+	color: #4283f4;
+	width: 20%;
+	/*text-shadow: 1px 1px 1px black, 0 0 10px #4587f9, 0 0 5px darkblue;*/
+}
+
+.skills__content-eachSkill hr {
+	z-index: -1;
+	width: 0%;
+    height: 4px;
+    border: 0;
+
+  box-shadow: 2px 2px 5px rgba(214, 212, 212, 0.5);
+  background-color: yellow;
+       
+    margin: 20px 0;
+    padding: 0; 
+    display: inline-block;
+	
+
+    animation-name: backgroundColorChanging;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes fontColorChanging {
+    0%   {color: #fc8e19;}
+    100% {color:  yellow;}
+
+}
+
+@keyframes backgroundColorChanging {
+    0%   {background: #fc8e19;}
+    100% {background: yellow;}
+}
+
+
+
+.skillChart {
+	width: 80%;
+}
+
+.skills__content-eachSkill i:hover {
+	color: #0277f4;
+	font-size: 55px;
+	transition: all .4s ease;
+}
+
+
+#skill-js {
+	animation-name: skillsRunTo80;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    width: 80%;
+}
+
+#skill-html  {
+	animation-name: skillsRunTo100;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    width: 100%;
+}
+
+#skill-css {
+	animation-name: skillsRunTo80;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    width: 80%;
+}
+
+#skill-java {
+	animation-name: skillsRunTo60;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    width: 60%;
+}
+
+#skill-react {
+	animation-name: skillsRunTo20;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    width: 20%;
+}
+
+#skill-grad {
+	animation-name: skillsRunTo100;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    width: 100%;
+
+
+}
+
+#skill-meetup {
+
+	animation-name: skillsRunTo100;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    width: 100%;
+}
+
+/* ------------------- PROJECTS SECTION -------------------- */
+
+.projects {
+	padding: 50px 10px;
+	background-color: #f7cb51;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 25px;
+	color: #27282b;
+}
+
+.projects i {
+	font-size: 30px;
+	padding: 5px;
+}
+
+.projects h2 {
+	text-align: center;
+	border: dashed 5px #4283f4;
+	font-size: 25px;
+	padding: 0 20px;
+	max-width: 20%;
+	margin: 0;
+
+}
+
+.projects__content {
+	padding: 25px 50px;
+	max-width: 70%;
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	color: #27282b;
+	text-align: center;
+
+}
+
+
+.projects__content-eachProject {
+	max-width: 40%;
+	background-color: #eff3f9;
+	margin: 20px;
+	box-shadow: 12px 12px 17px rgba(0, 0, 0, 0.5);
+
+}
+
+
+.projects__content-eachProject:hover {
+	
+	box-shadow: 8px 8px 12px rgb(0, 0, 0, 0.7);
+
+}
+
+.projects__content-eachProject img {
+	max-width: 100%;
+	max-height: 80%;
+
+	
+}
+
+.eachProject__thumbnail {
+	
+}
+
+.eachProject__detail {
+	background-color: #eff3f9;
+	padding: 10px 0;
+}
+
+.projects__content-eachProject h3 {
+	margin: 0;
+	font-weight: 700;
+	font-size: 22px;
+	text-decoration: underline;
+	
+}
+
+.eachProject__detail p {
+	margin: 0;
+	font-size: 20px;
+
+}
+
+.projects__content-eachProject a {
+	text-decoration: none;	
+	color: #27282b;
+}
+
+/* ------------------- FOOTER SECTION -------------------- */
+
+.footer__contact {
+	font-family: 'Gaegu', cursive;
+	font-family: 'Jura', sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #383737;
+	color: white;
+	letter-spacing: 2px;
+}
+
+.footer__contact h3 {
+	width: 100%;
+	font-size: 35px;
+	padding: 25px 0 20px 0;
+	margin: 0;
+	font-weight: 700;
+	text-align: center;
+}
+
+
+.thanks {
+	display: flex;
+	justify-content: center;
+	width: 80%;
+	margin: 0;
+}
+
+.thanks hr {
+	width: 30%;
+	margin: 50px 0 0 0; 
+    height: 4px;
+    border: 0;
+  box-shadow: 2px 2px 5px rgba(214, 212, 212, 0.5);
+  background-color: white;
+       
+}
+
+.footer__contact i {
+	padding: 10px;
+	color: #4283f4;
+	font-size: 40px;
+}
+
+.footer__contact i:hover {
+
+		color: #f7cb51;
+	font-size: 45px;
+	text-shadow: 1px 1px 1px black, 0 0 10px white, 0 0 5px darkblue;
+}
+
+.footer__contact p, #copyright {
+	font-size: 15px;
+	margin: 15px 0 30px 0;
+	color: white;
+
+}
+
+
+
+/* ------------------- ANIMATION SECTION -------------------- */
+
+@keyframes skillsRunTo100 {
+    0%   {width: 0%;}
+    100% {width: 100%;}
+}
+
+@keyframes skillsRunTo80 {
+    0%   {width: 0%;}
+    100% {width: 80%;}
+}
+
+@keyframes skillsRunTo60 {
+    0%   {width: 0%;}
+    100% {width: 60%;}
+}
+
+@keyframes skillsRunTo20 {
+    0%   {width: 0%;}
+    100% {width: 20%;}
+}
+
+
+@keyframes iconMove100 {
+	0%   {left: 0px; top: 0px;}
+	100% {left: 100%; top: 0px;}
+}
+
+
+@keyframes photoAppear {
+    0%   {opacity: 0}
+    100% {opacity: 1}
+}
