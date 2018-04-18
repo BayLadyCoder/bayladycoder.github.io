@@ -314,6 +314,8 @@ header {
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
 	        justify-content: center;
+	        -ms-align-items: center;
+	        align-items: center;
 
 		position: relative;
 	-webkit-animation-name: photoAppear;
@@ -426,6 +428,9 @@ header {
 		font-size: 30px;
 	}
 
+	.introduction__text-buttons{
+		margin: 15px 8px;
+	}
 	.introduction__text-buttons a {
 		border-radius: 15px;
 		margin: 15px 8px;
@@ -469,8 +474,20 @@ header {
 		padding: 100px 0px 150px 0px;
 	}
 
-	.introduction__text p, .introduction__text h1, .introduction__text strong {
+	.introduction__text p, .introduction__text strong {
 		font-size: 20px;
+		margin-bottom: 15px;
+		
+	}
+
+	#frontEndWebH1 {
+		font-size: 20px;
+		padding-bottom: 0;
+	}
+
+	.introduction__text-buttons{
+		padding: 10px;
+		margin: 0;
 	}
 
 	.introduction__text-buttons a {
@@ -488,6 +505,13 @@ header {
 	.introduction__text-buttons i {
 		font-size: 18px;
 		margin: 15px 5px;
+	}
+
+
+	.introduction__text-social {
+		margin: 0;
+		padding: 0;
+		font-size: 25px;
 	}
 
 	.introduction__text-social i {
