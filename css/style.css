@@ -121,28 +121,21 @@ label {
 
 
 
-	.navigation {
-		display: flex;
-		flex-direction: column;
-		-ms-align-items: center;
-		align-items: center;
-		height: 67px;
-	}
-
 	#navTopResponsive {
-		width: 100%;
-		display: table;
-		content: "";
-		border-bottom: 1px solid darkgrey;
+		width: 200px;
+		display: flex;
+		justify-content: flex-start;
+		/*border-bottom: 1px solid darkgrey;*/
 		height: 40px;
 	}
 
 	.logo {
 		height: 100%;
-		width: 30%;
+		width: 100%%;
 		float: left;
 		text-align: center;
-		padding-left: 5px;
+		
+		/*display: none;*/
 	}
 
 	.logo a {
@@ -173,36 +166,39 @@ label {
 
 	.toggleDiv {
 		display: flex;
-		width: 10%;
+		width: 100%;
 		align-items: center;
 		justify-content: center;
 		cursor: pointer;
 		height: 100%;
-		
+		display: none;
 	}
 
 	#menu {
-		display: none;
+		/*display: none;*/
 		text-align: center;
 		width: 100%;
 		background-color: #4283f4;
 		margin: 0;
+		display: flex;
+		justify-content: flex-end;
 
 	}
 
 	.menu__item {
 
-		padding: 0;
+		padding: 0 15px;
 		display: flex;
 		justify-content: center;
 		-ms-align-items: center;
 		align-items: center;
-		border-bottom: 1px solid darkgrey;
+		/*border-bottom: 1px solid darkgrey;*/
 		margin: 0;
 		background-color: #4283f4;
 		text-align: center;
 		
 	}
+
 
 	.menu__item:hover {
 		background-color: #f7cb51;
@@ -214,7 +210,6 @@ label {
 		text-align: center;
 		justify-content: center;
 		width: 100%;
-		font-size: 16px;
 		padding: 0;
 	}
 
@@ -227,7 +222,7 @@ label {
 
 
 	.logo a, .menu__item a {
-		font-size: 16px;
+		font-size: 15px;
 	}
 
 	#navTopResponsive, .navigation, #menu, .menu__item a, .logo a{
@@ -244,8 +239,22 @@ label {
 
 @media only screen and (max-width: 600px) {
 
+	.navigation {
+		height: 40px;
+	}
+
+	#navTopResponsive {
+		/*display: none;*/
+		height: 100%;
+	}
+
 	.logo {
-		display: none;
+		/*display: none;*/
+		height: 100%;
+	}
+
+	.logo {
+		padding-left: 10px;
 	}
 
 	.toggleDiv {
@@ -255,10 +264,26 @@ label {
 	#toggle {
 		display: block;
 		width: 100%;
+		font-size: 25px;
+	}
 
+	#menu {
+		width: 100%;
+	/*	display: flex;
+		justify-content: center;*/
+		height: 100%;
+	}
+
+	.logo a, .menu__item a {
+		font-size: 12px;
+		height: 100%;
+	}
+
+	.menu__item {
+
+		padding: 0 10px;
 	}
 }
-
 
 /* ------------------- HEADER SECTION -------------------- */
 header {
