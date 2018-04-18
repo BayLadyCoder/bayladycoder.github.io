@@ -428,7 +428,7 @@ header {
 
 	.introduction__text-buttons a {
 		border-radius: 15px;
-		margin: 15px 0;
+		margin: 15px 8px;
 		padding: 10px;
 		font-size: 20px;
 	}
@@ -487,6 +487,7 @@ header {
 
 	.introduction__text-buttons i {
 		font-size: 18px;
+		margin: 15px 5px;
 	}
 
 	.introduction__text-social i {
@@ -527,6 +528,11 @@ header {
 		-ms-align-items: center;
 		align-items: center;
 		padding-bottom: 20px;
+	}
+
+	.introduction__text-buttons a {
+		font-size: 15px;
+		margin: 12px 3px;
 	}
 
 	.introduction__text-social i {
