@@ -126,78 +126,57 @@ label {
 	z-index: 100;
 }
 
-/*#x {
-	border: none;
-	background-color: #4283f4;
-	color: #f7cb51;
-	font-size: 30px;
-	display: flex;
-	justify-content: center;
-	-ms-align-items: center;
-	align-items: center;
+#toggle:focus, #x:focus {
 	outline: none;
-	cursor: pointer;
-	padding: 0 30px;
-	height: 100%;
-	width: 50px;
-	z-index: 100;
-}*/
+}
 
-	#toggle:focus, #x:focus {
-		outline: none;
+#toggle:hover, #x:hover {
+	color: #595958;
+	background-color: #f7cb51;
+}
+
+
+/* ========== NAV BAR RESPONSIVE DESIGN ========== */
+
+@media only screen and (max-width: 900px) {
+
+	#navTopResponsive, .navigation, #menu, .menu__item a, .logo a{
+		height: 50px;
 	}
 
-	#toggle:hover, #x:hover {
-		color: #595958;
-		background-color: #f7cb51;
-
+	.logo a {
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
-
+}
 
 
 @media only screen and (max-width: 800px) {
 	
 	.navigation {
-		display: block;
+		display: flex;
+		justify-content: space-between;
 	}
-
 
 	#navTopResponsive {
 		width: 100%;
 		display: flex;
-		justify-content: space-between;
+		justify-content: flex-start;
 		/*border-bottom: 1px solid darkgrey;*/
-		height: 40px;
+		height: 100%;
 	}
 
 	.logo {
 		height: 100%;
-		width: 100%%;
+		width: 250px;
 		float: left;
-		text-align: center;
-		
 		/*display: none;*/
 	}
 
 	.logo a {
 		width: 100%;
 	}
-
-
-/*	#toggle {
-		display: flex;
-		justify-content: center;
-		-ms-align-items: center;
-		align-items: center;
-		outline: none;
-		cursor: pointer;
-		padding: 0 30px;
-		height: 100%;
-		width: 50px;
-		z-index: 100;
-	}*/
-	
-
 
 	.toggleDiv {
 		display: flex;
@@ -253,49 +232,30 @@ label {
 }
 
 
-
-@media only screen and (max-width: 900px) {
-
-
-	.logo a, .menu__item a {
-		/*font-size: 20px;*/
-	}
-
-	#navTopResponsive, .navigation, #menu, .menu__item a, .logo a{
-		height: 50px;
-	}
-
-	.logo a {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-
-}
-
 @media only screen and (max-width: 600px) {
 
 	.navigation {
 		height: 40px;
-
 	}
 
 	#navTopResponsive {
-		/*display: none;*/
+		height: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.logo {
 		height: 100%;
 	}
 
 	.logo {
-		/*display: none;*/
-		height: 100%;
-	}
-
-	.logo {
-		padding-left: 10px;
+		padding-left: 0px;
+		width: 180px;
 	}
 
 	.toggleDiv {
 		width: 60px;
+
 	}
 
 	#toggle, #x {
@@ -305,11 +265,8 @@ label {
 		font-size: 20px;
 	}
 
-
-	#menu {
-		
+	#menu {	
 		width: 100%;
-		/*display: flex;*/
 		display: none;
 		justify-content: space-between;
 		height: 100%;
@@ -321,7 +278,6 @@ label {
 	}
 
 	.menu__item {
-
 		padding: 0 10px;
 	}
 }
@@ -342,7 +298,7 @@ header {
 }
 
 .introduction__text {
-	padding: 0px 20px;
+	padding: 0px;
 	border-radius: 20px;
 	
 	font-family: 'Jura', sans-serif;
@@ -462,7 +418,8 @@ header {
 @media only screen and (max-width: 1200px) {
 
 	header {
-		padding: 150px 30px 200px 30px;
+		width: 100%;
+		padding: 130px 0px 170px 0px;
 	}
 
 	.introduction__text p, .introduction__text h1, .introduction__text strong {
@@ -471,7 +428,7 @@ header {
 
 	.introduction__text-buttons a {
 		border-radius: 15px;
-		margin: 15px;
+		margin: 15px 0;
 		padding: 10px;
 		font-size: 20px;
 	}
@@ -496,7 +453,7 @@ header {
 
 
 	.introduction__photo {
-		padding-left: 30px;
+		padding-left: 10px;
 	}
 
 
@@ -506,34 +463,34 @@ header {
 }
 
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 800px) {
 
 	header {
 		padding: 100px 0px 150px 0px;
 	}
 
 	.introduction__text p, .introduction__text h1, .introduction__text strong {
-		font-size: 25px;
+		font-size: 20px;
 	}
 
 	.introduction__text-buttons a {
 		border-radius: 15px;
-		margin: 15px;
+		margin: 10px;
 		padding: 10px;
-		font-size: 18px;
+		font-size: 15px;
 	}
 
 	.introduction__text h1 {
 		margin: 10px;
-		padding-bottom: 25px;
+		padding-bottom: 20px;
 	}
 
 	.introduction__text-buttons i {
-		font-size: 22px;
+		font-size: 18px;
 	}
 
 	.introduction__text-social i {
-		padding: 15px 20px;
+		padding: 10px 15px;
 		font-size: 25px;
 	}
 
@@ -543,12 +500,13 @@ header {
 
 
 	.introduction__photo {
-		padding-left: 20px;
+		padding-left: 0px;
+
 	}
 
 
 	.introduction__photo img {
-		width: 180px;
+		width: 150px;
 	}	
 
 }
@@ -556,7 +514,41 @@ header {
 
 @media only screen and (max-width: 600px) {
 
+	header {
+		padding: 50px 0px 80px 0px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
 
+	.introduction__text {
+		display: flex;
+		justify-content: center;
+		-ms-align-items: center;
+		align-items: center;
+		padding-bottom: 20px;
+	}
+
+	.introduction__text-social i {
+		padding: 5px 10px;
+		font-size: 20px;
+	}
+
+	.introduction__text-social i:hover {
+		font-size: 25px;
+	}
+
+	.introduction__photo {
+		display: flex;
+		justify-content: center;
+		height: 100%;
+	}
+
+	.introduction__photo img {
+		width: 100px;
+		
+		height: 100%;
+	}
 }
 
 /* ------------------- ABOUT ME SECTION -------------------- */
