@@ -586,7 +586,7 @@ header {
 /* ------------------- ABOUT ME SECTION -------------------- */
 
 main {
-	font-family: 'Roboto', sans-serif;
+	/*font-family: 'Roboto', sans-serif;*/
 	/*font-family: 'Jura', sans-serif;
 	font-family: 'Gaegu', cursive;*/
 	font-family: 'Source Sans Pro', sans-serif;
@@ -758,7 +758,7 @@ main {
 	font-size: 25px;
 	padding: 10px 15px;
 	max-width: 300px;
-	margin: 0 0 30px 0;
+	margin-bottom: 40px;
 	animation-name: fontColorChanging;
     animation-duration: 5s;
     animation-iteration-count: 1;
@@ -794,6 +794,7 @@ main {
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
+	margin-bottom: 15px;
 }
 
 .skills__content-eachSkill p {
@@ -939,7 +940,7 @@ main {
 	}
 	.skills__content-eachSkill p {
 		font-weight: 700;
-		font-size: 18px;
+		font-size: 17px;
 	}
 
 
@@ -956,7 +957,7 @@ main {
 /* ------------------- PROJECTS SECTION -------------------- */
 
 .projects {
-	padding: 50px 10px;
+	padding: 110px 0px;
 	background-color: #f7cb51;
 	width: 100%;
 	display: flex;
@@ -972,10 +973,10 @@ main {
 	padding: 5px;
 }
 
-.projects h2 {
+#projects__header {
 	text-align: center;
 	border: dashed 5px #4283f4;
-	font-size: 25px;
+	font-size: 27px;
 	padding: 10px 15px;
 	max-width: 300px;
 	margin: 0;
@@ -991,7 +992,6 @@ main {
 	margin: 0;
 	color: #27282b;
 	text-align: center;
-
 }
 
 
@@ -1046,6 +1046,60 @@ main {
 	color: #27282b;
 }
 
+
+
+@media only screen and (max-width: 1200px) {
+	.projects__content-eachProject {
+		margin: 30px;
+	}
+
+}
+
+@media only screen and (max-width: 900px) {
+	.projects__content-eachProject {
+		margin: 20px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+
+	.projects i {
+	font-size: 25px;
+	padding: 5px;
+	}
+	#projects__header {
+		font-size: 20px;
+		max-width: 200px;
+		border: dashed 4px #4283f4;
+		padding: 7px 10px;
+		margin-bottom: 10px;
+	}
+
+	.projects__content {
+	padding: 0px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+	.projects__content-eachProject {
+	max-width: 80%;
+	padding: 10px;
+	padding-bottom: 25px;
+	margin: 20px 0px;
+}
+
+	.projects__content-eachProject h3 {
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+
+	.eachProject__detail p {
+		font-size: 18px;
+	}
+}
 
 
 /* ------------------- FOOTER SECTION -------------------- */
