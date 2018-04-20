@@ -1,3 +1,4 @@
+
 var menu = document.getElementById("menu");
 var navTop = document.getElementById("navTopResponsive");
 
@@ -10,7 +11,8 @@ function show() {
 function hide() {
 
 	menu.style.display = "none";
-	navTop.style.display = "flex";		
+	navTop.style.display = "flex";	
+
 }
 
 
