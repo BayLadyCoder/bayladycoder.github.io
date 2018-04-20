@@ -1123,6 +1123,7 @@ main {
 	margin: 0;
 	font-weight: 700;
 	text-align: center;
+
 }
 
 
@@ -1143,6 +1144,13 @@ main {
        
 }
 
+.footer__contact-social {
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+}
+
 .footer__contact i {
 	padding: 10px;
 	color: #4283f4;
@@ -1161,6 +1169,55 @@ main {
 	margin: 15px 0 30px 0;
 	color: white;
 
+}
+
+@media only screen and (max-width: 900px) {
+	.footer__contact h3 {
+		font-size: 30px;
+		padding: 25px 0 20px 0;
+		max-width: 400px;
+	}
+
+	.thanks {
+		width: 90%;
+	}
+
+	.thanks hr {
+		width: 30%;
+		margin: 45px 0 0 0; 
+		height: 3px;
+		border: 0;
+		box-shadow: 2px 2px 5px rgba(214, 212, 212, 0.5);
+		background-color: white;
+
+	}
+}
+
+@media only screen and (max-width: 600px) {
+
+	
+	.footer__contact h3 {
+		font-size: 25px;
+		padding: 25px 0 15px 0;
+		max-width: 220px;
+	}
+
+	.footer__contact i {
+		padding: 5px;
+		color: #4283f4;
+		font-size: 25px;
+	}
+
+	.footer__contact i:hover {
+		font-size: 30px;
+	}
+
+	.footer__contact p, #copyright {
+		font-size: 10px;
+		margin: 5px 0 15px 0;
+		color: white;
+
+	}
 }
 
 
