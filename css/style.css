@@ -11,7 +11,7 @@
 
 
 /* -------------------- NAVIGATION SECTION -------------------- */
-.navigation {
+.navigation, .navigation2 {
 	background-color: #4283f4;
 	height: 67px;
 	color: #f4cc46;
@@ -23,6 +23,9 @@
 	/*align-items: center;*/
 }
 
+.navigation2 {
+	height: 50px;
+}
 
 .logo {
 	width: 250px;
@@ -45,11 +48,11 @@
 	align-items: center;
 }
 
-.logo, #menu {
+.logo, #desktopMenu, #responsiveMenu {
 	font-family: 'Gugi', cursive;
 }
 
-#menu {
+#desktopMenu {
 	height: 67px;
 	display: flex;
 	align-items: stretch;
@@ -58,15 +61,19 @@
 	
 }
 
+#responsiveMenu {
+	height: 50px;
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	justify-content: flex-end;
+	float: right;
+}
+
 .menu__item {
 	display: inline-block;
 	padding-right: 15px;
-	
 	margin: 0;
-}
-
-
-.menu__item {
 	text-decoration: none;
 	height: 100%;
 	color: #f4cc46;
@@ -109,6 +116,10 @@ label {
 	height: 100%;
 }
 
+#navTopResponsive, #responsiveMenu {
+	display: none;
+}
+
 #toggle, #x {
 	border: none;
 	background-color: #4283f4;
@@ -136,11 +147,12 @@ label {
 }
 
 
+
 /* ========== NAV BAR RESPONSIVE DESIGN ========== */
 
 @media only screen and (max-width: 900px) {
 
-	#navTopResponsive, .navigation, #menu, .menu__item a, .logo a{
+	#navTopResponsive, .navigation, #desktopMenu, #responsiveMenu, .menu__item a, .logo a{
 		height: 50px;
 	}
 
@@ -151,12 +163,23 @@ label {
 	}
 }
 
+.navigation2 {
+		display: none;
+	}
+
 
 @media only screen and (max-width: 800px) {
+
+	#desktopMenu {
+		display: none;
+	}
 	
 	.navigation {
-		display: flex;
-		justify-content: space-between;
+		display: none;
+	}
+
+	.navigation2 {
+		display: block;
 	}
 
 	#navTopResponsive {
@@ -189,7 +212,7 @@ label {
 		/*display: none;*/
 	}
 
-	#menu {
+	#responsiveMenu {
 		display: none;
 		
 		text-align: center;
@@ -235,9 +258,11 @@ label {
 
 @media only screen and (max-width: 600px) {
 
-	.navigation {
+	.navigation2 {
 		height: 40px;
 	}
+
+
 
 	#navTopResponsive {
 		height: 100%;
@@ -266,7 +291,7 @@ label {
 		font-size: 20px;
 	}
 
-	#menu {	
+	#responsiveMenu {	
 		width: 100%;
 		display: none;
 		justify-content: space-between;

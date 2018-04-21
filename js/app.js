@@ -1,16 +1,16 @@
 
-var menu = document.getElementById("menu");
+var responsiveMenu = document.getElementById("responsiveMenu");
 var navTop = document.getElementById("navTopResponsive");
 
 function show() {
 
-	menu.style.display = "flex";
+	responsiveMenu.style.display = "flex";
 	navTop.style.display = "none";		
 }
 
 function hide() {
 
-	menu.style.display = "none";
+	responsiveMenu.style.display = "none";
 	navTop.style.display = "flex";	
 
 }
