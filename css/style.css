@@ -765,7 +765,7 @@ main {
 
 /* ------------------- SKILLS SECTION -------------------- */
 
-.skills {
+#skills {
 	padding: 120px 10px 100px 10px;
 	background-color: #383737;
 	color: #d6d9db;
@@ -820,6 +820,7 @@ main {
 	justify-content: space-between;
 	width: 100%;
 	margin-bottom: 15px;
+
 }
 
 .skills__content-eachSkill p {
@@ -836,6 +837,10 @@ main {
 .skillChart {
 	width: 100%;
 }
+
+/*.skill {
+	opacity: 1;
+}*/
 
 .skills__content-eachSkill hr {
 	z-index: -1;
@@ -854,6 +859,7 @@ main {
     animation-name: backgroundColorChanging;
     animation-duration: 5s;
     animation-iteration-count: 1;
+	
 }
 
 @keyframes fontColorChanging {
@@ -871,7 +877,9 @@ main {
 
 .skillChart {
 	width: 70%;
+
 }
+
 
 .skills__content-eachSkill i:hover {
 	color: #0277f4;
@@ -880,57 +888,47 @@ main {
 }
 
 
-#skill-js {
-	animation-name: skillsRunTo80;
-    animation-duration: 5s;
-    animation-iteration-count: 1;
-    width: 80%;
-}
 
-#skill-html  {
-	animation-name: skillsRunTo100;
-    animation-duration: 5s;
-    animation-iteration-count: 1;
+
+#skill-html, #skill-selfLearn, #skill-social {
     width: 100%;
+
 }
 
-#skill-css {
-	animation-name: skillsRunTo80;
-    animation-duration: 5s;
-    animation-iteration-count: 1;
+#skill-js, #skill-css {
     width: 80%;
 }
+
 
 #skill-java {
-	animation-name: skillsRunTo60;
-    animation-duration: 5s;
-    animation-iteration-count: 1;
     width: 60%;
 }
 
 #skill-react {
-	animation-name: skillsRunTo20;
-    animation-duration: 5s;
-    animation-iteration-count: 1;
     width: 20%;
 }
 
-#skill-grad {
-	animation-name: skillsRunTo100;
-    animation-duration: 5s;
-    animation-iteration-count: 1;
-    width: 100%;
+/*.hidden {
+	opacity: 0;
+}
 
+.skills100 {
+	animation: skillsRunTo100 5s 1;
 
 }
 
-#skill-meetup {
-
-	animation-name: skillsRunTo100;
-    animation-duration: 5s;
-    animation-iteration-count: 1;
-    width: 100%;
+.skills80 {
+	animation: skillsRunTo80 5s 1;
 }
+
+.skills60 {
+	animation: skillsRunTo60 5s 1;
+}
+
+.skills20 {
+	animation: skillsRunTo20 5s 1;
+}*/
+
 
 
 @media only screen and (max-width: 900px) {
@@ -976,6 +974,10 @@ main {
 	.skills__content-eachSkill i {
 		font-size: 30px;
 		margin-bottom: 15px;	
+	}
+
+	.skills__content-eachSkill i:hover {
+		font-size: 40px;
 	}
 }
 
