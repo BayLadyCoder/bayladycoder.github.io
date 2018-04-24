@@ -18,39 +18,35 @@ function hide() {
 
 // ------------------ Skills Section: Animation starts when scroll down ---------------------------
 
-	const skillsSection = document.getElementById("skills");
-	
-	
-	const elems100 = document.getElementsByClassName('skills100');
-	const elems80 = document.getElementsByClassName('skills80');
-	const skillJava = document.getElementById('skill-java');
-	const skillReact = document.getElementById('skill-react');
-		
+const skillsSection = document.getElementById("skills");
+const elems100 = document.getElementsByClassName('skills100');
+const elems80 = document.getElementsByClassName('skills80');
+const skillJava = document.getElementById('skill-java');
+const skillReact = document.getElementById('skill-react');
 
-	function debounce(func, wait = 20, immediate = true) {
+function debounce(func, wait = 20, immediate = true) {
 
-		var timeout;
+	var timeout;
 
-		return function() {
-			var context = this, args = arguments;
-			var later = function() {
-				timeout = null;
-				if (!immediate) func.apply(context, args);
-			};
-
-			var callNow = immediate && !timeout;
-			clearTimeout(timeout);
-			timeout = setTimeout(later, wait);
-			if (callNow) func.apply(context, args);
+	return function() {
+		var context = this, args = arguments;
+		var later = function() {
+			timeout = null;
+			if (!immediate) func.apply(context, args);
 		};
 
+		var callNow = immediate && !timeout;
+		clearTimeout(timeout);
+		timeout = setTimeout(later, wait);
+		if (callNow) func.apply(context, args);
 	};
+};
 
-		function skillsChartRun() {
+function skillsChartRun() {
 
 			// Half way through skills section
 			var chartsRunAt = (window.scrollY + window.innerHeight) - 100;
-		
+			
 			//Bottom of the skills section
 			const sectionBottom = skillsSection.offsetTop + skillsSection.offsetHeight;
 
@@ -58,25 +54,20 @@ function hide() {
 			const isNotScrollPast = window.scrollY < sectionBottom;
 
 			if (isHalfShown && isNotScrollPast) {
-				// skill.forEach(function(e) {
-				// 	e.style.opacity = "1";
-				// });
 				
-					for (var i=0 ; i< elems100.length ; i++) {
-						window.removeEventListener('scroll', skillsChartRun)
-    					elems100[i].style.animation = "skillsRunTo100 5s 1";
-					}
+				for (var i=0 ; i< elems100.length ; i++) {
+					elems100[i].style.animation = "skillsRunTo100 5s 1";
+				}
 
-					for (var i=0 ; i< elems80.length ; i++) {
-						// window.removeEventListener('scroll', skillsChartRun)
-    					elems80[i].style.animation = "skillsRunTo80 5s 1";
-					}
+				for (var i=0 ; i< elems80.length ; i++) {
+					elems80[i].style.animation = "skillsRunTo80 5s 1";
+				}
 
-					skillJava.style.animation = "skillsRunTo60 5s 1";
-					skillReact.style.animation = "skillsRunTo20 5s 1";
+				skillJava.style.animation = "skillsRunTo60 5s 1";
+				skillReact.style.animation = "skillsRunTo20 5s 1";
 			}
 		}
 		
-// // skillsChartRun();
-window.addEventListener('scroll', debounce(skillsChartRun));
+
+		window.addEventListener('scroll', debounce(skillsChartRun));
 
