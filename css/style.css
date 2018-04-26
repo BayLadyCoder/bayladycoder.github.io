@@ -1080,7 +1080,6 @@ main {
 /* ------------------- FOOTER SECTION -------------------- */
 
 .footer__contact {
-	font-family: 'Gaegu', cursive;
 	font-family: 'Jura', sans-serif;
 	display: flex;
 	flex-direction: column;
