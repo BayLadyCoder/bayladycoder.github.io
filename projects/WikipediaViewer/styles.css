@@ -1,0 +1,139 @@
+body {
+  font-family: 'Acme', sans-serif;
+  color: white;
+  background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+display: flex;
+  justify-content: center;
+  flex-direction: column;
+ font-size: 20px;
+}
+
+.box {
+   display: flex;
+  justify-content: center;
+  //flex-direction: column;
+}
+div {
+  align-self: center;
+}
+
+.heading {
+  font-size: 45px;
+  padding: 20px 40px 20px 40px;
+  border-radius: 100px;
+  margin: 90px 0 0px 0;
+  color: #fc890f;
+}
+  
+.randomBtnDiv {
+  margin-bottom: 30px;
+}
+
+#randomBtn {
+  padding: 2px 8px;  
+  border-radius: 0px;
+  color: #4286f4;
+
+}
+
+#randomBtn:hover {
+  font-size: 23px;
+  color: #4286f4;
+  border: dotted 2px #fc890f;
+  cursor: pointer;
+  border-radius: 12px;
+  padding: 3px 10px;
+  text-decoration: none;
+}
+
+.search-box {
+  transform: translate (-50%, -50%);
+  height: 40px;
+  border-radius: 40px;
+  padding: 0px;
+  background-color: black;
+  border: 2px solid #fc890f;
+}
+
+.search-box:hover > .search-text {
+  width: 350px;
+  padding: 0px 6px;
+  
+}
+
+.search-btn {
+  color: #4286f4;
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+.search-text {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: #4286f4;
+  font-size: 23px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 0px;
+  border-radius: 40px;
+}
+
+.search-text:focus {
+  width: 350px;
+  padding: 2px 6px;
+  
+}
+ 
+.outputDiv {
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ width: 60%;
+}
+
+.outputLink {
+  color: #2095fc;
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding: 20px 20px 0px 30px;
+}
+
+li:hover > a {
+  background-color: #0074db;
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+li:hover {
+  background-color: #0074db;
+  color: white;
+  border: 2px solid #fc890f;
+}
+
+li {
+  list-style-type: none;
+  color: white;
+  border: 2px dotted #fc890f;
+  padding: 0px;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 100%;
+  margin: 5px;
+}

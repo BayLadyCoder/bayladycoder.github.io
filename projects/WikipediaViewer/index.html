@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+	<title>Wikipedia Viewer</title>
+</head>
+<body>
+	
+	<div class="heading">
+		Wikipedia Viewer
+	</div>
+
+	<div class="randomBtnDiv">
+		<a href="https://en.wikipedia.org/wiki/Special:Random" target='blank' id="randomBtn">Click here to see a random article</a>
+	</div>
+
+	<div class="search-box">
+		<input class="search-text" id="searchTerm" type="text" name="search" placeholder="Search..">
+		<a href="#" class="search-btn">
+			<i class="fas fa-search"></i>
+		</a>
+	</div>
+
+	<div class="outputDiv">
+		<ul id="output">
+
+		</ul>
+	</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
