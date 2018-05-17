@@ -6,12 +6,12 @@ var navTop = document.getElementById("navTopResponsive");
 
 function show() {
 	responsiveMenu.style.display = "flex";
-	navTop.style.display = "none";		
+	navTop.style.display = "none";
 }
 
 function hide() {
 	responsiveMenu.style.display = "none";
-	navTop.style.display = "flex";	
+	navTop.style.display = "flex";
 }
 
 
@@ -46,7 +46,7 @@ function skillsChartRun() {
 
 			// Half way through skills section
 			var chartsRunAt = (window.scrollY + window.innerHeight) - 100;
-			
+
 			//Bottom of the skills section
 			const sectionBottom = skillsSection.offsetTop + skillsSection.offsetHeight;
 
@@ -54,7 +54,7 @@ function skillsChartRun() {
 			const isNotScrollPast = window.scrollY < sectionBottom;
 
 			if (isHalfShown && isNotScrollPast) {
-				
+
 				for (var i=0 ; i< elems100.length ; i++) {
 					elems100[i].style.animation = "skillsRunTo100 5s 1";
 				}
@@ -64,10 +64,9 @@ function skillsChartRun() {
 				}
 
 				skillJava.style.animation = "skillsRunTo60 5s 1";
-				skillReact.style.animation = "skillsRunTo20 5s 1";
+				skillReact.style.animation = "skillsRunTo60 5s 1";
 			}
 		}
-		
+
 
 		window.addEventListener('scroll', debounce(skillsChartRun));
-
