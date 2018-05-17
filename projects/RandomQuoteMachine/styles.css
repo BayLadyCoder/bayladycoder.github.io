@@ -1,6 +1,6 @@
 body {
   font-family: "Karma", serif;
- 
+
   background: #FC5C7D;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #6A82FB, #FC5C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -8,6 +8,7 @@ background: linear-gradient(to right, #6A82FB, #FC5C7D); /* W3C, IE 10+/ Edge, F
   width: 100vw;
   height: 700px;
   color: black;
+  padding-top: 10%;
 }
 
 h1 {
@@ -39,7 +40,7 @@ background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+
 ;
   width: 500px;
   color: #e5e1e8;
-  
+
   margin: 0 auto;
   border-radius: 20px;
   font-size: 25px;
@@ -67,4 +68,3 @@ i {
   display: flex;
   justify-content: center;
 }
-

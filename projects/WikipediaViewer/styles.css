@@ -8,6 +8,8 @@ display: flex;
   justify-content: center;
   flex-direction: column;
  font-size: 20px;
+
+ padding-top: 10%;
 }
 
 .box {
@@ -26,13 +28,13 @@ div {
   margin: 90px 0 0px 0;
   color: #fc890f;
 }
-  
+
 .randomBtnDiv {
   margin-bottom: 30px;
 }
 
 #randomBtn {
-  padding: 2px 8px;  
+  padding: 2px 8px;
   border-radius: 0px;
   color: #4286f4;
 
@@ -60,7 +62,7 @@ div {
 .search-box:hover > .search-text {
   width: 350px;
   padding: 0px 6px;
-  
+
 }
 
 .search-btn {
@@ -73,7 +75,7 @@ div {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
 }
 
 
@@ -94,9 +96,9 @@ div {
 .search-text:focus {
   width: 350px;
   padding: 2px 6px;
-  
+
 }
- 
+
 .outputDiv {
   margin: 30px;
   display: flex;
