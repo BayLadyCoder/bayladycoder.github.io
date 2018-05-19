@@ -68,3 +68,32 @@ i {
   display: flex;
   justify-content: center;
 }
+
+
+
+@media only screen and (max-width: 900px) {
+
+  h1 {
+      font-size: 40px;
+  }
+
+  .quoteBox {
+    width: 450px;
+  }
+
+  .quote {
+    width: 400px;
+    font-size: 23px;
+  }
+
+  i {
+    font-size: 35px;
+  }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+
+}
