@@ -74,15 +74,15 @@ i {
 @media only screen and (max-width: 900px) {
 
   h1 {
-      font-size: 40px;
+      font-size: 38px;
   }
 
   .quoteBox {
-    width: 450px;
+    width: 400px;
   }
 
   .quote {
-    width: 400px;
+    width: 350px;
     font-size: 23px;
   }
 
@@ -94,6 +94,26 @@ i {
 
 
 @media only screen and (max-width: 600px) {
+  h1 {
+      font-size: 29px;
+  }
 
+  .quoteBox {
+    width: 300px;
+  }
+
+  .quote {
+    width: 250px;
+    font-size: 19px;
+  }
+
+  button {
+
+    font-size: 14px;
+  }
+
+  i {
+    font-size: 30px;
+  }
 
 }
