@@ -168,8 +168,7 @@ label {
 	}
 
 	.menu__item a {
-		padding-left: 15px;
-		padding-right: 15px;
+		padding: 0 15px;
 	}
 
 
@@ -202,7 +201,7 @@ label {
 
 	.logo a {
 		width: 100%;
-		padding-left: 20px;
+		/* padding-left: 20px; */
 	}
 
 	.toggleDiv {
@@ -259,12 +258,14 @@ label {
 
 	.navigation2 {
 		height: 30px;
+
 	}
 
 	#navTopResponsive {
 		height: 100%;
 		display: flex;
 		justify-content: space-between;
+
 	}
 
 	.logo {
@@ -304,6 +305,7 @@ label {
 	.menu__item {
 		padding: 0 5px;
 	}
+
 }
 
 /* ------------------- HEADER SECTION -------------------- */
