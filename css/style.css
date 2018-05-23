@@ -167,6 +167,11 @@ label {
 		display: none;
 	}
 
+	.menu__item a {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
 
 @media only screen and (max-width: 800px) {
 
@@ -222,7 +227,7 @@ label {
 
 	.menu__item {
 
-		padding: 0 30px;
+		padding: 0 22px;
 		display: flex;
 		justify-content: center;
 		-ms-align-items: center;
@@ -245,6 +250,7 @@ label {
 		justify-content: center;
 		width: 100%;
 		padding: 0;
+		font-size: 15px;
 	}
 }
 
@@ -252,7 +258,7 @@ label {
 @media only screen and (max-width: 600px) {
 
 	.navigation2 {
-		height: 40px;
+		height: 30px;
 	}
 
 	#navTopResponsive {
@@ -278,8 +284,9 @@ label {
 	#toggle, #x {
 		display: flex;
 		justify-content: center;
-		width: 60px;
+		width: 40px;
 		font-size: 20px;
+		padding: 0 5px;
 	}
 
 	#responsiveMenu {
@@ -290,12 +297,12 @@ label {
 	}
 
 	.logo a, .menu__item a {
-		font-size: 12px;
+		font-size: 10px;
 		height: 100%;
 	}
 
 	.menu__item {
-		padding: 0 10px;
+		padding: 0 5px;
 	}
 }
 
