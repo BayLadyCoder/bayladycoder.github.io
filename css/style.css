@@ -20,7 +20,6 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	/*align-items: center;*/
 }
 
 .navigation2 {
@@ -201,7 +200,6 @@ label {
 
 	.logo a {
 		width: 100%;
-		/* padding-left: 20px; */
 	}
 
 	.toggleDiv {
@@ -823,7 +821,6 @@ main {
 	text-transform: uppercase;
 	color: #4283f4;
 	width: 200px;
-	/*text-shadow: 1px 1px 1px black, 0 0 10px #4587f9, 0 0 5px darkblue;*/
 }
 
 .skillChart {
