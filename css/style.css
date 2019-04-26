@@ -620,6 +620,8 @@ main {
 
 .aboutMe__content {
 	width: 100%;
+	max-width: 1500px;
+
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -756,7 +758,7 @@ main {
 /* ------------------- SKILLS SECTION -------------------- */
 
 #skills {
-	padding: 120px 10px 100px 10px;
+	padding: 120px 0px 100px 0px;
 	background-color: #383737;
 	color: #d6d9db;
 	width: 100%;
@@ -790,8 +792,9 @@ main {
 }
 
 .skills__content {
-	width: 80%;
-	padding: 50px;
+	width: 90%;
+	max-width: 1200px;
+	padding: 50px 100px 50px 80px;
 	display: flex;
 	flex-direction: column;
 
@@ -879,13 +882,16 @@ main {
     width: 100%;
 }
 
-#skill-js, #skill-css {
+#skill-css {
     width: 80%;
 }
 
+#skill-js {
+	width: 80%;
+}
 
-#skill-java {
-    width: 60%;
+#skill-python {
+    width: 90%;
 }
 
 #skill-react {

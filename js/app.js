@@ -47,7 +47,8 @@ function hide() {
 const skillsSection = document.getElementById("skills");
 const elems100 = document.getElementsByClassName('skills100');
 const elems80 = document.getElementsByClassName('skills80');
-const skillJava = document.getElementById('skill-java');
+const elems90 = document.getElementsByClassName('skills90');
+const skillPython = document.getElementById('skill-python');
 const skillReact = document.getElementById('skill-react');
 
 function debounce(func, wait = 20, immediate = true) {
@@ -90,7 +91,11 @@ function skillsChartRun() {
 			elems80[i].style.animation = "skillsRunTo80 5s 1";
 		}
 
-		skillJava.style.animation = "skillsRunTo60 5s 1";
+		for (var i = 0; i < elems80.length; i++) {
+			elems90[i].style.animation = "skillsRunTo90 5s 1";
+		}
+
+		// skillPython.style.animation = "skillsRunTo80 5s 1";
 		skillReact.style.animation = "skillsRunTo60 5s 1";
 	}
 }
