@@ -836,15 +836,11 @@ main {
 	width: 0%;
     height: 4px;
     border: 0;
-
   box-shadow: 2px 2px 5px rgba(214, 212, 212, 0.5);
   background-color: yellow;
-
     margin: 20px 0;
     padding: 0;
     display: inline-block;
-
-
     animation-name: backgroundColorChanging;
     animation-duration: 5s;
     animation-iteration-count: 1;
@@ -862,12 +858,9 @@ main {
     100% {background: yellow;}
 }
 
-
-
 .skillChart {
 	width: 70%;
 }
-
 
 .skills__content-eachSkill i:hover {
 	color: #0277f4;
@@ -875,28 +868,15 @@ main {
 	transition: all .4s ease;
 }
 
-
-
-
-#skill-html, #skill-selfLearn, #skill-social {
+#skill-html, #skill-selfLearn, #skill-social, #skill-react, #skill-js, #skill-css {
     width: 100%;
 }
 
-#skill-css {
-    width: 80%;
-}
-
-#skill-js {
-	width: 80%;
-}
-
-#skill-python {
+/* #skill-python {
     width: 90%;
-}
+} */
 
-#skill-react {
-    width: 60%;
-}
+
 
 
 @media only screen and (max-width: 900px) {
