@@ -973,7 +973,7 @@ main {
 
 .projects__content {
 	padding: 25px 50px;
-	max-width: 90%;
+	width: 90%;
 	display: flex;
 	justify-content: center;
 	margin: 0;
@@ -983,7 +983,8 @@ main {
 
 
 .projects__content-eachProject {
-	max-width: 40%;
+	width: 40%;
+	max-width: 620px;
 	background-color: #eff3f9;
 	margin: 40px;
 	box-shadow: 12px 12px 17px rgba(0, 0, 0, 0.5);
