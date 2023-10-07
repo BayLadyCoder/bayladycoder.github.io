@@ -1,12 +1,12 @@
 // Initialize Scroll Spy
-$("body").scrollspy({
-  target: "#main-nav",
+$('body').scrollspy({
+  target: '#main-nav',
 });
 
 //Smooth Scrolling
-$(".menu__item a").on("click", function (e) {
+$('.menu__item a').on('click', function (e) {
   // Check for a has value
-  if (this.hash !== "") {
+  if (this.hash !== '') {
     // Prevent default behavior
     e.preventDefault();
 
@@ -14,7 +14,7 @@ $(".menu__item a").on("click", function (e) {
     const hash = this.hash;
 
     // Animate smooth scroll
-    $("html, body").animate(
+    $('html, body').animate(
       {
         scrollTop: $(hash).offset().top,
       },
@@ -29,27 +29,27 @@ $(".menu__item a").on("click", function (e) {
 
 // ---------------- Navigation Bar: Responsive design when device-width below 800px ----------------
 
-var responsiveMenu = document.getElementById("responsiveMenu");
-var navTop = document.getElementById("navTopResponsive");
+var responsiveMenu = document.getElementById('responsiveMenu');
+var navTop = document.getElementById('navTopResponsive');
 
 function show() {
-  responsiveMenu.style.display = "flex";
-  navTop.style.display = "none";
+  responsiveMenu.style.display = 'flex';
+  navTop.style.display = 'none';
 }
 
 function hide() {
-  responsiveMenu.style.display = "none";
-  navTop.style.display = "flex";
+  responsiveMenu.style.display = 'none';
+  navTop.style.display = 'flex';
 }
 
 // ------------------ Skills Section: Animation starts when scroll down ---------------------------
 
-const skillsSection = document.getElementById("skills");
-const elems100 = document.getElementsByClassName("skills100");
-const elems80 = document.getElementsByClassName("skills80");
-const elems90 = document.getElementsByClassName("skills90");
-const skillPython = document.getElementById("skill-python");
-const skillReact = document.getElementById("skill-react");
+const skillsSection = document.getElementById('skills');
+const elems100 = document.getElementsByClassName('skills100');
+const elems80 = document.getElementsByClassName('skills80');
+const elems90 = document.getElementsByClassName('skills90');
+const skillPython = document.getElementById('skill-python');
+const skillReact = document.getElementById('skill-react');
 
 function debounce(func, wait = 20, immediate = true) {
   var timeout;
@@ -81,17 +81,17 @@ function skillsChartRun() {
 
   if (isHalfShown && isNotScrollPast) {
     for (var i = 0; i < elems100.length; i++) {
-      elems100[i].style.animation = "skillsRunTo100 5s 1";
+      elems100[i].style.animation = 'skillsRunTo100 5s 1';
     }
 
     for (var i = 0; i < elems80.length; i++) {
-      elems80[i].style.animation = "skillsRunTo80 5s 1";
+      elems80[i].style.animation = 'skillsRunTo80 5s 1';
     }
 
     for (var i = 0; i < elems80.length; i++) {
-      elems90[i].style.animation = "skillsRunTo90 5s 1";
+      elems90[i].style.animation = 'skillsRunTo90 5s 1';
     }
   }
 }
 
-window.addEventListener("scroll", debounce(skillsChartRun));
+window.addEventListener('scroll', debounce(skillsChartRun));

@@ -2,12 +2,13 @@
 	font-size: 17px;
 
 }
- body {
- 	margin: 0;
- 	color: #595958;
- 	width: 100vw;
- 	height: 100vh;
- }
+
+body {
+	margin: 0;
+	color: #595958;
+	width: 100vw;
+	height: 100vh;
+}
 
 
 /* -------------------- NAVIGATION SECTION -------------------- */
@@ -81,7 +82,7 @@
 
 .menu__item a:hover {
 	background-color: #f7cb51;
-	 color: #595958;
+	color: #595958;
 	-webkit-transition: all .3s ease;
 	-o-transition: all .3s ease;
 	transition: all .3s ease;
@@ -151,7 +152,7 @@ label {
 
 @media only screen and (max-width: 900px) {
 
-	#navTopResponsive, .navigation, #desktopMenu, #responsiveMenu, .menu__item a, .logo a{
+	#navTopResponsive, .navigation, #desktopMenu, #responsiveMenu, .menu__item a, .logo a {
 		height: 50px;
 	}
 
@@ -163,12 +164,12 @@ label {
 }
 
 .navigation2 {
-		display: none;
-	}
+	display: none;
+}
 
-	.menu__item a {
-		padding: 0 15px;
-	}
+.menu__item a {
+	padding: 0 15px;
+}
 
 
 @media only screen and (max-width: 800px) {
@@ -310,14 +311,14 @@ label {
 header {
 	width: 100%;
 	padding: 200px 30px 250px 30px;
-	background-color:#383737;
+	background-color: #383737;
 	color: white;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 	margin: 0;
 }
 
@@ -333,19 +334,19 @@ header {
 	display: flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
 	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-	        -ms-align-items: center;
-	        align-items: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
 
-		position: relative;
+	position: relative;
 	-webkit-animation-name: photoAppear;
-	        animation-name: photoAppear;
-    -webkit-animation-duration: 7s;
-            animation-duration: 7s;
+	animation-name: photoAppear;
+	-webkit-animation-duration: 7s;
+	animation-duration: 7s;
 }
 
 .introduction__text p {
@@ -375,7 +376,7 @@ header {
 	color: white;
 	font-size: 25px;
 	-webkit-box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.3);
-	        box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.3);
+	box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.3);
 }
 
 .introduction__text-buttons i {
@@ -386,7 +387,7 @@ header {
 	color: #f4cc46;
 	border: solid 3px #f7cb51;
 	-webkit-box-shadow: 5px 5px 8px rgba(247, 239, 212, 0.3);
-	        box-shadow: 5px 5px 8px rgba(247, 239, 212, 0.3);
+	box-shadow: 5px 5px 8px rgba(247, 239, 212, 0.3);
 	text-shadow: 1px 1px 2px black, 0 0 25px #f7efd4, 0 0 5px black;
 }
 
@@ -398,8 +399,8 @@ header {
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 }
 
 .introduction__text-social i {
@@ -427,13 +428,13 @@ header {
 	border-radius: 45%;
 	border: solid black 2px;
 	-webkit-box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
-	        box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+	box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
 
-  	position: relative;
+	position: relative;
 	-webkit-animation-name: photoAppear;
-	        animation-name: photoAppear;
-    -webkit-animation-duration: 7s;
-            animation-duration: 7s;
+	animation-name: photoAppear;
+	-webkit-animation-duration: 7s;
+	animation-duration: 7s;
 }
 
 /* ===== HEADER RESPONSIVE DESIGN ===== */
@@ -449,9 +450,10 @@ header {
 		font-size: 30px;
 	}
 
-	.introduction__text-buttons{
+	.introduction__text-buttons {
 		margin: 15px 8px;
 	}
+
 	.introduction__text-buttons a {
 		border-radius: 15px;
 		margin: 15px 8px;
@@ -506,7 +508,7 @@ header {
 		padding-bottom: 0;
 	}
 
-	.introduction__text-buttons{
+	.introduction__text-buttons {
 		padding: 10px;
 		margin: 0;
 	}
@@ -648,6 +650,7 @@ main {
 	align-items: center;
 	margin: 40px 0;
 }
+
 .aboutMe__content-text {
 	max-width: 70%;
 	padding: 0px 30px 0px 50px;
@@ -739,8 +742,7 @@ main {
 
 	.aboutMe__content-photo img {
 		max-height: 140px;
-		max-width: 100%
-		box-shadow: 5px 5px 80px rgba(0, 0, 0, 0.5);
+		max-width: 100% box-shadow: 5px 5px 80px rgba(0, 0, 0, 0.5);
 	}
 
 	.aboutMe__content-text {
@@ -777,18 +779,18 @@ main {
 	max-width: 300px;
 	margin-bottom: 40px;
 	animation-name: fontColorChanging;
-    animation-duration: 5s;
-    animation-iteration-count: 1;
-    color: yellow;
+	animation-duration: 5s;
+	animation-iteration-count: 1;
+	color: yellow;
 
 }
 
 .skills i {
 	font-size: 25px;
 	animation-name: fontColorChanging;
-    animation-duration: 5s;
-    animation-iteration-count: 1;
-    color: yellow;
+	animation-duration: 5s;
+	animation-iteration-count: 1;
+	color: yellow;
 }
 
 .skills__content {
@@ -803,7 +805,7 @@ main {
 .skills__content-eachSkill i {
 	font-size: 45px;
 	margin-bottom: 20px;
-    color: yellow;
+	color: yellow;
 	text-shadow: 1px 1px 1px black, 0 0 7px white, 0 0 5px darkblue;
 
 }
@@ -834,28 +836,38 @@ main {
 .skills__content-eachSkill hr {
 	z-index: -1;
 	width: 0%;
-    height: 4px;
-    border: 0;
-  box-shadow: 2px 2px 5px rgba(214, 212, 212, 0.5);
-  background-color: yellow;
-    margin: 20px 0;
-    padding: 0;
-    display: inline-block;
-    animation-name: backgroundColorChanging;
-    animation-duration: 5s;
-    animation-iteration-count: 1;
+	height: 4px;
+	border: 0;
+	box-shadow: 2px 2px 5px rgba(214, 212, 212, 0.5);
+	background-color: yellow;
+	margin: 20px 0;
+	padding: 0;
+	display: inline-block;
+	animation-name: backgroundColorChanging;
+	animation-duration: 5s;
+	animation-iteration-count: 1;
 
 }
 
 @keyframes fontColorChanging {
-    0%   {color: #fc8e19;}
-    100% {color:  yellow;}
+	0% {
+		color: #fc8e19;
+	}
+
+	100% {
+		color: yellow;
+	}
 
 }
 
 @keyframes backgroundColorChanging {
-    0%   {background: #fc8e19;}
-    100% {background: yellow;}
+	0% {
+		background: #fc8e19;
+	}
+
+	100% {
+		background: yellow;
+	}
 }
 
 .skillChart {
@@ -869,7 +881,7 @@ main {
 }
 
 #skill-html, #skill-selfLearn, #skill-social, #skill-react, #skill-js, #skill-css {
-    width: 100%;
+	width: 100%;
 }
 
 /* #skill-python {
@@ -884,6 +896,7 @@ main {
 	#skills__header {
 		max-width: 250px;
 	}
+
 	.skills__content-eachSkill p {
 		font-weight: 700;
 		font-size: 20px;
@@ -908,6 +921,7 @@ main {
 	.skills__content {
 		padding: 0;
 	}
+
 	.skills__content-eachSkill p {
 		font-weight: 700;
 		font-size: 17px;
@@ -1103,10 +1117,10 @@ main {
 .thanks hr {
 	width: 30%;
 	margin: 50px 0 0 0;
-    height: 4px;
-    border: 0;
-  	box-shadow: 2px 2px 5px rgba(214, 212, 212, 0.5);
-  	background-color: white;
+	height: 4px;
+	border: 0;
+	box-shadow: 2px 2px 5px rgba(214, 212, 212, 0.5);
+	background-color: white;
 }
 
 .footer__contact-social {
@@ -1188,38 +1202,75 @@ main {
 /* ------------------- ANIMATION SECTION -------------------- */
 
 @keyframes skillsRunTo100 {
-    0%   {width: 0%;}
-    100% {width: 100%;}
+	0% {
+		width: 0%;
+	}
+
+	100% {
+		width: 100%;
+	}
 }
 
 @keyframes skillsRunTo90 {
-    0%   {width: 0%;}
-    100% {width: 90%;}
+	0% {
+		width: 0%;
+	}
+
+	100% {
+		width: 90%;
+	}
 }
 
 @keyframes skillsRunTo80 {
-    0%   {width: 0%;}
-    100% {width: 80%;}
+	0% {
+		width: 0%;
+	}
+
+	100% {
+		width: 80%;
+	}
 }
 
 @keyframes skillsRunTo60 {
-    0%   {width: 0%;}
-    100% {width: 60%;}
+	0% {
+		width: 0%;
+	}
+
+	100% {
+		width: 60%;
+	}
 }
 
 @keyframes skillsRunTo20 {
-    0%   {width: 0%;}
-    100% {width: 20%;}
+	0% {
+		width: 0%;
+	}
+
+	100% {
+		width: 20%;
+	}
 }
 
 
 @keyframes iconMove100 {
-	0%   {left: 0px; top: 0px;}
-	100% {left: 100%; top: 0px;}
+	0% {
+		left: 0px;
+		top: 0px;
+	}
+
+	100% {
+		left: 100%;
+		top: 0px;
+	}
 }
 
 
 @keyframes photoAppear {
-    0%   {opacity: 0}
-    100% {opacity: 1}
+	0% {
+		opacity: 0
+	}
+
+	100% {
+		opacity: 1
+	}
 }
