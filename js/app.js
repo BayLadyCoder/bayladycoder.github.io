@@ -4,7 +4,7 @@ $('body').scrollspy({
 });
 
 //Smooth Scrolling
-$('.menu__item a').on('click', function (e) {
+$('a').on('click', function (e) {
   // Check for a has value
   if (this.hash !== '') {
     // Prevent default behavior
