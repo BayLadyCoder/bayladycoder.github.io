@@ -900,7 +900,6 @@ main {
 
 .projects__content {
 	padding: 25px 50px;
-	width: 90%;
 	display: flex;
 	justify-content: center;
 	margin: 0;
@@ -999,7 +998,7 @@ main {
 	}
 
 	.projects__content-eachProject {
-		max-width: 80%;
+		width: 70%;
 		padding: 10px;
 		padding-bottom: 25px;
 		margin: 20px 0px;
