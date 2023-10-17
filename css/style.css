@@ -814,7 +814,7 @@ main {
 
 .skills__content-eachSkill:hover {
 	transition: all .4s ease;
-	background-color: #ffd7f3;
+	background-color: #f1d36f;
 }
 
 .skills__content-eachSkill:hover i {
