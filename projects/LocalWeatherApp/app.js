@@ -9,9 +9,7 @@ $(document).ready(function () {
       $.getJSON(bdcApi, function (json) {
         const city = json.city;
         const state = json.principalSubdivision;
-
-        const location =
-          '<p><strong>Your Location:</strong> ' + city + ', ' + state + '</p>';
+        const location = `<p><strong>Your Location:</strong> ${city}, ${state}</p>`;
 
         $('#location').html(location);
       });
@@ -54,27 +52,17 @@ $(document).ready(function () {
 
         const tempCel = Math.round(json.current.temperature_2m);
         const tempFah = Math.round(tempCel * (9 / 5) + 32);
+        const currentWeather = `<p class="temperature">${tempCel}<span>ºC</span></p>`;
 
-        const degreeCel =
-          '<p class="temperature">' +
-          tempCel +
-          ' ' +
-          '<span>' +
-          'ºC' +
-          '</span></p>';
+        $('#currentWeather').html(currentWeather);
 
-        const degreeFah =
-          '<p class="temperature" style="display: none">' +
-          tempFah +
-          ' ' +
-          '<span>' +
-          'ºF' +
-          '</span></p>';
-
-        $('#currentWeather').html(degreeCel + degreeFah);
-
-        $('span').on('click', function () {
-          $('.temperature').toggle();
+        $('.temperature').on('click', function (event) {
+          // toggle temperature unit
+          if (event.target.innerText.endsWith('ºF')) {
+            $('.temperature').empty().append(`${tempCel} <span>ºC</span>`);
+          } else {
+            $('.temperature').empty().append(`${tempFah} <span>ºF</span>`);
+          }
         });
       });
     });
