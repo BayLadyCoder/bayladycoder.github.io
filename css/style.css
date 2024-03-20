@@ -856,6 +856,34 @@ main {
 }
 
 
+@media only screen and (max-width: 1200px) {
+	.skills__content-section {
+		margin-bottom: 15px;
+		gap: 8px;
+	}
+
+	.skills__content-eachSkill {
+		padding: 12px;
+	}
+
+	.skills__content-eachSkill p {
+		font-size: 18px;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	.skills__content-section {
+		gap: 6px;
+	}
+
+	.skills__content-eachSkill {
+		padding: 10px;
+	}
+
+	.skills__content-eachSkill p {
+		font-size: 16px;
+	}
+}
 
 @media only screen and (max-width: 600px) {
 	.skills {
@@ -865,6 +893,7 @@ main {
 	#skills__header {
 		font-size: 20px;
 		border: dashed 4px #4283f4;
+		margin-bottom: 20px;
 	}
 
 	.skills__content {
@@ -872,11 +901,11 @@ main {
 	}
 
 	.skills__content-eachSkill {
-		padding: 8px;
+		padding: 6px;
 	}
 
 	.skills__content-eachSkill p {
-		font-size: 16px;
+		font-size: 14px;
 	}
 
 }
