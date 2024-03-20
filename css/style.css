@@ -794,6 +794,17 @@ main {
 	flex-wrap: wrap;
 }
 
+.skills__content-section {
+	width: 90%;
+	max-width: 1200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	flex-wrap: wrap;
+
+}
+
 .skills__content-eachSkill {
 	display: flex;
 	align-items: center;
@@ -814,6 +825,7 @@ main {
 .skills__content-eachSkill:hover {
 	transition: all .4s ease;
 	background-color: #f1d36f;
+	cursor: default;
 }
 
 .skills__content-eachSkill:hover i {
